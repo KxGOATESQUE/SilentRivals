@@ -530,7 +530,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	})
 
 	local WindowStuff = AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(255, 255, 255), 0, 10), {
-		Size = UDim2.new(0, 150 * 1.5, 1, -50), -- Agrandir horizontalement
+		Size = UDim2.new(0, 300, 1, -50),
 		Position = UDim2.new(0, 0, 0, 50)
 	}), {
 		AddThemeObject(SetProps(MakeElement("Frame"), {
@@ -538,12 +538,12 @@ function OrionLib:MakeWindow(WindowConfig)
 			Position = UDim2.new(0, 0, 0, 0)
 		}), "Second"), 
 		AddThemeObject(SetProps(MakeElement("Frame"), {
-			Size = UDim2.new(0, 10 * 1.5, 1, 0), -- Agrandir horizontalement
-			Position = UDim2.new(1, -10 * 1.5, 0, 0) -- Ajuster la position
+			Size = UDim2.new(0, 10, 1, 0),
+			Position = UDim2.new(1, -10, 0, 0)
 		}), "Second"), 
 		AddThemeObject(SetProps(MakeElement("Frame"), {
-			Size = UDim2.new(0, 1 * 1.5, 1, 0), -- Agrandir horizontalement
-			Position = UDim2.new(1, -1 * 1.5, 0, 0) -- Ajuster la position
+			Size = UDim2.new(0, 1, 1, 0),
+			Position = UDim2.new(1, -1, 0, 0)
 		}), "Stroke"), 
 		TabHolder,
 		SetChildren(SetProps(MakeElement("TFrame"), {
@@ -555,8 +555,8 @@ function OrionLib:MakeWindow(WindowConfig)
 			}), "Stroke"), 
 			AddThemeObject(SetChildren(SetProps(MakeElement("Frame"), {
 				AnchorPoint = Vector2.new(0, 0.5),
-				Size = UDim2.new(0, 32 * 1.5, 0, 32), -- Agrandir horizontalement
-				Position = UDim2.new(0, 10 * 1.5, 0.5, 0) -- Ajuster la position
+				Size = UDim2.new(0, 32, 0, 32),
+				Position = UDim2.new(0, 10, 0.5, 0)
 			}), {
 				SetProps(MakeElement("Image", "https://www.roblox.com/headshot-thumbnail/image?userId=".. LocalPlayer.UserId .."&width=420&height=420&format=png"), {
 					Size = UDim2.new(1, 0, 1, 0)
@@ -568,21 +568,21 @@ function OrionLib:MakeWindow(WindowConfig)
 			}), "Divider"),
 			SetChildren(SetProps(MakeElement("TFrame"), {
 				AnchorPoint = Vector2.new(0, 0.5),
-				Size = UDim2.new(0, 32 * 1.5, 0, 32), -- Agrandir horizontalement
-				Position = UDim2.new(0, 10 * 1.5, 0.5, 0) -- Ajuster la position
+				Size = UDim2.new(0, 32, 0, 32),
+				Position = UDim2.new(0, 10, 0.5, 0)
 			}), {
 				AddThemeObject(MakeElement("Stroke"), "Stroke"),
 				MakeElement("Corner", 1)
 			}),
 			AddThemeObject(SetProps(MakeElement("Label", LocalPlayer.DisplayName, WindowConfig.HidePremium and 14 or 13), {
-				Size = UDim2.new(1, -60 * 1.5, 0, 13), -- Agrandir horizontalement
-				Position = WindowConfig.HidePremium and UDim2.new(0, 50 * 1.5, 0, 19) or UDim2.new(0, 50 * 1.5, 0, 12), -- Ajuster la position
+				Size = UDim2.new(1, -60, 0, 13),
+				Position = WindowConfig.HidePremium and UDim2.new(0, 50, 0, 19) or UDim2.new(0, 50, 0, 12),
 				Font = Enum.Font.GothamBold,
 				ClipsDescendants = true
 			}), "Text"),
 			AddThemeObject(SetProps(MakeElement("Label", "", 12), {
-				Size = UDim2.new(1, -60 * 1.5, 0, 12), -- Agrandir horizontalement
-				Position = UDim2.new(0, 50 * 1.5, 1, -25), -- Ajuster la position
+				Size = UDim2.new(1, -60, 0, 12),
+				Position = UDim2.new(0, 50, 1, -25),
 				Visible = not WindowConfig.HidePremium
 			}), "TextDark")
 		}),
