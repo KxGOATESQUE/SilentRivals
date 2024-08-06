@@ -1,5 +1,4 @@
 local Players = game:GetService("Players")
-
 local Luxt1 = {}
 
 function Luxt1.CreateWindow(libName, logoId)
