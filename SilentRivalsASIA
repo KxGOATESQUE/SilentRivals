@@ -1,6 +1,0 @@
-local StarterGui = game:GetService("StarterGui")
-StarterGui:SetCore("SendNotification", {
-    Title =  "Script Moved",
-    Text = "Please use the original script, key system have changed.",
-    Duration = 20
-})
