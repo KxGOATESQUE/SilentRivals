@@ -1,4 +1,0 @@
-local StarterGui = game:GetService("StarterGui")
-StarterGui:SetCore("SendNotification", {Title =  "This version is outdated", Text = "Loading main version | Solara version is now useless", Duration = 15})
-wait(2)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/KxGOATESQUE/SilentRivals/main/SilentRivals"))()
